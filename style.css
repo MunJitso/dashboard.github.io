@@ -1,0 +1,275 @@
+@font-face {
+    font-family: Schoolbell;
+    src: url('Schoolbell.ttf');
+}
+
+
+/* General Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: #454545;
+}
+
+p {
+    display: inline-block;
+}
+
+
+/* Containers Settings */
+
+.container {
+    width: 66%;
+    padding: 2rem;
+    min-height: 83vh;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px 0px #0000005b;
+    display: grid;
+    grid-template-columns: 1.25fr 3fr;
+    grid-gap: 1.5rem;
+}
+
+.second-container {
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-gap: 1rem;
+}
+
+.thirth-bar {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 1rem;
+}
+
+.skills-bar {
+    background-color: #D8D8D8;
+    border-radius: 31px;
+    padding: 1rem 1.4rem;
+}
+
+.last-activity-bar {
+    padding: 1rem 1.4rem 0;
+    background-color: #D8D8D8;
+    border-radius: 31px;
+}
+
+.badges {
+    padding: 1rem 1.4rem 0;
+    background-color: #D8D8D8;
+    border-radius: 31px;
+}
+
+
+/* User Bar */
+
+.information-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #D8D8D8;
+    border-radius: 31px;
+}
+
+.profile-photo {
+    height: 11rem;
+    width: 11rem;
+    margin-top: 0.8rem;
+    border-radius: 28px;
+}
+
+.username {
+    text-align: center;
+    font-size: 27px;
+    margin-top: 0.6rem;
+    font-family: Schoolbell;
+}
+
+.profile-badge {
+    margin: 0.3rem 0 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.badgetocenter {
+    text-align: center;
+    padding: 2px 3.5px;
+    color: #20A2AA;
+    font-size: 13px;
+    font-weight: 200;
+    border: 2px solid #20A2AA;
+    border-radius: 26px;
+    width: 50px;
+}
+
+.social-medias {
+    color: #454545;
+    font-size: 17px;
+}
+
+.user-desciption {
+    height: 55%;
+    display: flex;
+    align-items: flex-end;
+    color: #313131;
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+
+/* Skills Bar */
+
+.skills-language {
+    padding: 0.5rem 0;
+}
+
+.language-bar {
+    color: #5A5A5A;
+    margin: 1.70rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.full-percentage {
+    width: 75%;
+    height: 15px;
+    background-color: #afafaf;
+    border-radius: 17px;
+}
+
+.html-percentage {
+    width: 90%;
+    height: 100%;
+    background-color: #3E95E5;
+    border-radius: 17px;
+}
+
+.css-percentage {
+    width: 70%;
+    height: 100%;
+    background-color: #3E95E5;
+    border-radius: 17px;
+}
+
+.js-percentage {
+    width: 45%;
+    height: 100%;
+    background-color: #3E95E5;
+    border-radius: 17px;
+}
+
+
+/* Last Activity */
+
+.activity-container {
+    padding: 1.25rem 0 1rem;
+}
+
+.icon {
+    margin-right: 10px;
+    color: #000;
+}
+
+.reacts-replies {
+    color: #474747;
+    padding: 1rem 0 0.7rem;
+}
+
+.reacts {
+    padding: 0.7rem 0;
+}
+
+.replies {
+    padding: 0.7rem 0 0 0;
+}
+
+.fa-heart {
+    color: #E04F4F;
+}
+
+
+/*  Badges */
+
+.badge-container {
+    padding: 2rem 0;
+}
+
+.gold-badge {
+    color: #DDBC46;
+    padding: 0 0 2rem;
+    font-size: 20px
+}
+
+.pro-badge {
+    color: #20A2AA;
+    font-size: 20px
+}
+
+.badge-container h5 {
+    color: #313131;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+@media (max-width:1170px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media (max-width:1024px) {
+    .container {
+        grid-template-columns: auto;
+    }
+    .information-bar {
+        min-height: 70vh;
+    }
+    .social-medias {
+        width: 100%;
+        text-align: center;
+    }
+    .user-desciption {
+        text-align: center;
+    }
+}
+
+@media (max-width:694px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width:536px) {
+    .language-bar {
+        display: unset;
+        align-items: center;
+        padding: 10px;
+    }
+    .full-percentage {
+        margin: 10px;
+        width: 97%;
+    }
+    .second-container {
+        grid-template-rows: 1fr;
+    }
+    .thirth-bar {
+        grid-template-columns: unset;
+        grid-template-rows: 2fr;
+    }
+}
