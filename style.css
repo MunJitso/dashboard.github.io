@@ -37,7 +37,7 @@ p {
 .container {
     width: 66%;
     padding: 2rem;
-    min-height: 83vh;
+    min-height: 80vh;
     background-color: white;
     border-radius: 24px;
     box-shadow: 0px 4px 4px 0px #0000005b;
@@ -80,10 +80,20 @@ p {
 /* User Bar */
 
 .information-bar {
+    display: grid;
+    grid-template-rows: unset;
+}
+
+.information-main {
     display: flex;
     justify-content: center;
     background-color: #D8D8D8;
     border-radius: 31px;
+}
+
+.profile {
+    text-align: center;
+    height: 100%;
 }
 
 .profile-photo {
@@ -123,11 +133,9 @@ p {
 }
 
 .user-desciption {
-    height: 55%;
-    display: flex;
-    align-items: flex-end;
     color: #313131;
     margin-top: 1rem;
+    padding: 10px;
     font-size: 18px;
 }
 
@@ -236,9 +244,7 @@ p {
 @media (max-width:1024px) {
     .container {
         grid-template-columns: auto;
-    }
-    .information-bar {
-        min-height: 70vh;
+        grid-template-rows: auto;
     }
     .social-medias {
         width: 100%;
@@ -250,6 +256,9 @@ p {
 }
 
 @media (max-width:694px) {
+    body {
+        min-height: unset;
+    }
     .container {
         width: 90%;
     }
