@@ -97,6 +97,7 @@ p {
 }
 
 .profile-photo {
+    cursor: pointer;
     height: 11rem;
     width: 11rem;
     margin-top: 0.8rem;
